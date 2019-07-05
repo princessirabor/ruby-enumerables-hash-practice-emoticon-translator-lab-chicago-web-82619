@@ -33,6 +33,13 @@ def get_japanese_emoticon(dir2,emoticon)
   emo_msg
 end
 
-def get_english_meaning
+def get_english_meaning(dir3,emoticon2)
   # code goes here
+  resultsHash = load_library(dir3)
+  msg =""
+  if resultsHash["get_meaning"][emoticon2]
+else
+  
+  end
+  
 end
