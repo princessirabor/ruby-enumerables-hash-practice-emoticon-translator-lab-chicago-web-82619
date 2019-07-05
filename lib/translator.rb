@@ -23,8 +23,13 @@ end
 
 def get_japanese_emoticon(dir2,emoticon)
   # code goes here
+  emo_msg = ""
   results = load_library(dir2)
-  result["get_emoticon"][emoticon]
+  if result["get_emoticon"][emoticon]
+    emo_msg = result["get_emoticon"][emoticon]
+  else
+    emo_msg = "Sorry, this is not a known emoticon"
+  end
 end
 
 def get_english_meaning
