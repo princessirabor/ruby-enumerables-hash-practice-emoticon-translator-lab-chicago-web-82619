@@ -28,7 +28,7 @@ def get_japanese_emoticon(dir2,emoticon)
   if results["get_emoticon"][emoticon]
     emo_msg = results["get_emoticon"][emoticon]
   else
-    emo_msg = "Sorry, this is not a known emoticon"
+    emo_msg = "Sorry, that emoticon was not found"
   end
   emo_msg
 end
