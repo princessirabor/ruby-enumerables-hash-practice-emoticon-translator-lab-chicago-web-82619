@@ -12,7 +12,7 @@ def load_library(dir)
   cnf.each do |(key,value)|
     (value.length-1).times do |index|
       inner1[value[index]] =value[index+1]
-      inner2[value[index+1]] =value[index]
+      inner2[value[index+1]] = key
     end
   end
   
