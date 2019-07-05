@@ -21,8 +21,10 @@ def load_library(dir)
   result
 end
 
-def get_japanese_emoticon(dir,emoticon)
+def get_japanese_emoticon(dir2,emoticon)
   # code goes here
+  results = load_library(dir2)
+  result["get_emoticon"][emoticon]
 end
 
 def get_english_meaning
