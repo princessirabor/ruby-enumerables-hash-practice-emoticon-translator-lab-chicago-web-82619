@@ -4,6 +4,7 @@ def load_library(dir)
   # code goes here
   result ={}
   cnf = YAML::load_file(File.join(__dir__, 'emoticons.yml'))
+  p cnf
   
   #cnf["get_meaning"] = {}
   #cnf["get_emoticon"] = {}
