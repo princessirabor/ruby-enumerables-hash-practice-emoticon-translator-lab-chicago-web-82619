@@ -16,9 +16,9 @@ def load_library(dir)
     end
   end
   
-  #cnf["get_meaning"] = {}
-  #cnf["get_emoticon"] = {}
-  cnf
+  result["get_meaning"] = inner2
+  result["get_emoticon"] =inner1
+  result
 end
 
 def get_japanese_emoticon
