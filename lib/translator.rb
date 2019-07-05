@@ -4,6 +4,7 @@ def load_library(dir)
   # code goes here
   cnf = YAML::load_file(File.join(__dir__, 'emoticons.yml'))
   p cnf[angel]
+  cnf
 end
 
 def get_japanese_emoticon
