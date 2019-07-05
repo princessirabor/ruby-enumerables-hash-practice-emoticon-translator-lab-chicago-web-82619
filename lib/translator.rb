@@ -3,11 +3,14 @@ require 'yaml'
 def load_library(dir)
   # code goes here
   result ={}
+  inner={}
+  result["get_meaning"] = {}
+  result["get_emoticon"] = {}
   cnf = YAML::load_file(File.join(__dir__, 'emoticons.yml'))
   
   cnf.each do |(key,value)|
     (value.length-1).times do |index|
-      result[value[index]] =
+      inner[value[index]] =
     end
   end
   
