@@ -3,8 +3,8 @@ require 'yaml'
 def load_library(dir)
   # code goes here
   cnf = YAML::load_file(File.join(__dir__, 'emoticons.yml'))
-  cnf[:get_meaning] = {}
-  cnf[:get_emoticon] = {}
+  cnf["get_meaning"] = {}
+  cnf["get_emoticon"] = {}
   cnf
 end
 
