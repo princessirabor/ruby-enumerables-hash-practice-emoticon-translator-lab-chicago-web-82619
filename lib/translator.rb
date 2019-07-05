@@ -38,8 +38,9 @@ def get_english_meaning(dir3,emoticon2)
   resultsHash = load_library(dir3)
   msg =""
   if resultsHash["get_meaning"][emoticon2]
-else
-  
+    msg = resultsHash["get_meaning"][emoticon2]
+  else
+    msg = "Sorry, that emoticon was not found"
   end
   
 end
