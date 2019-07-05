@@ -3,7 +3,6 @@ require 'yaml'
 def load_library(dir)
   # code goes here
   cnf = YAML::load_file(File.join(__dir__, 'emoticons.yml'))
-  p cnf
   cnf
 end
 
